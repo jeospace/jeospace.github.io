@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://jeospace.github.io/project/atom.xml" rel="self"/>
+  <link href="https://jeospace.github.io/atom.xml" rel="self"/>
   
-  <link href="https://jeospace.github.io/project/"/>
+  <link href="https://jeospace.github.io/"/>
   <updated>2022-03-21T02:48:27.201Z</updated>
-  <id>https://jeospace.github.io/project/</id>
+  <id>https://jeospace.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://jeospace.github.io/project/2022/03/21/hello-world/"/>
-    <id>https://jeospace.github.io/project/2022/03/21/hello-world/</id>
+    <link href="https://jeospace.github.io/2022/03/21/hello-world/"/>
+    <id>https://jeospace.github.io/2022/03/21/hello-world/</id>
     <published>2022-03-21T02:48:27.201Z</published>
     <updated>2022-03-21T02:48:27.201Z</updated>
     
