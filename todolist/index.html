@@ -1,0 +1,578 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>任务计划 | jeospace</title><meta name="author" content="jeospace"><meta name="copyright" content="jeospace"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content=".todo-wrap {   max-width: 640px;   margin: 0 auto;   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, &#39;Helvetica Neue&#39;, &#39;PingFang SC&#39;, &#39;Microsoft YaHei&#39;, sans-serif;   color: #4C4948; } .t">
+<meta property="og:type" content="website">
+<meta property="og:title" content="任务计划">
+<meta property="og:url" content="https://jeospace.github.io/todolist/index.html">
+<meta property="og:site_name" content="jeospace">
+<meta property="og:description" content=".todo-wrap {   max-width: 640px;   margin: 0 auto;   font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, &#39;Helvetica Neue&#39;, &#39;PingFang SC&#39;, &#39;Microsoft YaHei&#39;, sans-serif;   color: #4C4948; } .t">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2022-03-21T02:48:27.000Z">
+<meta property="article:modified_time" content="2026-07-08T15:28:57.052Z">
+<meta property="article:author" content="jeospace">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jeospace.github.io/todolist/index.html"><link rel="preconnect" href="https://cdn.bootcdn.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"><link rel="stylesheet" href="/lib/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/lib/infinitegrid/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '任务计划',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2026-07-08 23:28:57'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="jeospace" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/todolist/"><i class="fa-fw fas fa-check-square"></i><span> TodoList</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="jeospace"><span class="site-name">jeospace</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/todolist/"><i class="fa-fw fas fa-check-square"></i><span> TodoList</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">任务计划</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><style>
+.todo-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #4C4948;
+}
+.todo-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.todo-input {
+  flex: 1;
+  border: none;
+  border-bottom: 2px solid #EEEEEE;
+  padding: 10px 4px;
+  font-size: 1em;
+  font-family: inherit;
+  color: #1F2D3D;
+  background: transparent;
+  outline: none;
+  transition: border-color .3s;
+}
+.todo-input:focus { border-bottom-color: #49B1F5; }
+.todo-input::placeholder { color: #cacaca; }
+.todo-btn {
+  width: 42px; height: 42px;
+  border: none; border-radius: 50%;
+  background: #49B1F5; color: #fff; font-size: 1.2em;
+  cursor: pointer; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.todo-btn:hover { transform: scale(1.08); box-shadow: 0 4px 12px rgba(73,177,245,.35); }
+.todo-btn:active { transform: scale(0.95); }
+
+.todo-list { list-style: none; padding: 0; margin: 0; }
+.todo-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 4px;
+  border-bottom: 1px solid #f5f5f5;
+  transition: background .2s;
+}
+.todo-item:hover { background: #fafafa; }
+
+/* 已完成项整体降级 */
+.todo-item.completed { opacity: .55; }
+.todo-item.completed:hover { opacity: .85; }
+
+.todo-check {
+  width: 20px; height: 20px;
+  border: 2px solid #cacaca; border-radius: 50%;
+  cursor: pointer; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .25s;
+}
+.todo-check:hover { border-color: #49B1F5; }
+.todo-check.done { background: #49B1F5; border-color: #49B1F5; }
+.todo-check.done::after {
+  content: ''; width: 5px; height: 9px;
+  border: solid #fff; border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-1px);
+}
+.todo-text {
+  flex: 1; font-size: 1em; line-height: 1.6;
+  cursor: default; word-break: break-word;
+  transition: color .3s;
+}
+.todo-text.completed { color: #cacaca; text-decoration: line-through; }
+.todo-edit-input {
+  flex: 1; border: none; border-bottom: 2px solid #49B1F5;
+  padding: 4px 0; font-size: 1em; font-family: inherit;
+  color: #1F2D3D; background: transparent; outline: none;
+}
+.todo-actions { display: flex; gap: 4px; opacity: 0; transition: opacity .2s; }
+.todo-item:hover .todo-actions { opacity: 1; }
+.todo-action-btn {
+  width: 30px; height: 30px; border: none; background: none;
+  color: #858585; cursor: pointer; border-radius: 6px;
+  font-size: .85em; display: flex; align-items: center; justify-content: center;
+  transition: all .2s;
+}
+.todo-action-btn:hover { background: #f0f0f0; color: #1F2D3D; }
+.todo-action-btn.delete:hover { background: #FEF0F0; color: #F47466; }
+
+/* 分区标题 */
+.todo-section-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 20px 4px 10px;
+  font-size: .82em; color: #858585; font-weight: 500;
+  user-select: none;
+}
+.todo-section-header .count {
+  background: #f0f0f0; color: #858585;
+  padding: 1px 8px; border-radius: 10px;
+  font-size: .9em;
+}
+.todo-section-header.collapsible { cursor: pointer; }
+.todo-section-header.collapsible:hover { color: #4C4948; }
+.todo-collapse-arrow {
+  display: inline-block;
+  transition: transform .3s;
+  font-size: .7em;
+}
+.todo-collapse-arrow.collapsed { transform: rotate(-90deg); }
+.todo-clear-completed {
+  margin-left: auto;
+  border: none; background: none;
+  color: #F47466; cursor: pointer;
+  font-size: .95em; font-family: inherit;
+  padding: 2px 8px; border-radius: 4px;
+  transition: background .2s;
+}
+.todo-clear-completed:hover { background: #FEF0F0; }
+
+.todo-empty {
+  text-align: center; padding: 60px 0;
+  color: #cacaca; font-size: .95em; line-height: 2;
+}
+.todo-empty-icon { font-size: 2.8em; display: block; margin-bottom: 16px; opacity: .6; }
+
+/* 导出按钮 */
+.todo-toolbar {
+  display: flex; justify-content: flex-end;
+  margin-bottom: 4px;
+}
+.todo-export-btn {
+  border: none; background: none;
+  color: #858585; cursor: pointer;
+  font-size: .8em; font-family: inherit;
+  padding: 4px 10px; border-radius: 4px;
+  transition: all .2s;
+}
+.todo-export-btn:hover { background: #f0f0f0; color: #49B1F5; }
+</style>
+
+<div class="todo-wrap">
+  <div class="todo-toolbar">
+    <button class="todo-export-btn" id="todoExportBtn" title="导出为 txt">导出</button>
+  </div>
+  <div class="todo-bar">
+    <input class="todo-input" id="todoInput" type="text" placeholder="添加一个新任务..." maxlength="200" autocomplete="off">
+    <button class="todo-btn" id="todoAddBtn" title="添加">+</button>
+  </div>
+  <ul class="todo-list" id="todoActiveList"></ul>
+  <div class="todo-empty" id="todoEmpty">
+    <span class="todo-empty-icon">📋</span>
+    这里放临时任务，只存于本地浏览器<br>用法举例：当天开工后的临时任务～～停工后导出今日任务txt换小鱼干～～<br>现在还没有任务<br>在上方输入框写下第一件事吧
+  </div>
+  <div id="todoCompletedSection" style="display:none">
+    <div class="todo-section-header collapsible" id="todoCompletedHeader">
+      <span class="todo-collapse-arrow collapsed" id="todoCollapseArrow">▾</span>
+      <span>已完成</span>
+      <span class="count" id="todoCompletedCount">0</span>
+      <button class="todo-clear-completed" id="todoClearBtn">清除</button>
+    </div>
+    <ul class="todo-list" id="todoCompletedList" style="display:none"></ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  const STORAGE_KEY = 'blog-todolist';
+  let todos = [];
+  let editingId = null;
+  let completedCollapsed = true;
+
+  const $input = document.getElementById('todoInput');
+  const $activeList = document.getElementById('todoActiveList');
+  const $completedList = document.getElementById('todoCompletedList');
+  const $completedSection = document.getElementById('todoCompletedSection');
+  const $completedHeader = document.getElementById('todoCompletedHeader');
+  const $collapseArrow = document.getElementById('todoCollapseArrow');
+  const $completedCount = document.getElementById('todoCompletedCount');
+  const $empty = document.getElementById('todoEmpty');
+  const $addBtn = document.getElementById('todoAddBtn');
+  const $clearBtn = document.getElementById('todoClearBtn');
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      todos = raw ? JSON.parse(raw) : [];
+    } catch(e) { todos = []; }
+    if (!Array.isArray(todos)) todos = [];
+  }
+
+  function save() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
+    render();
+  }
+
+  function add(text) {
+    text = text.trim();
+    if (!text || text.length > 200) return;
+    todos.unshift({ id: Date.now(), text: text, completed: false, createdAt: new Date().toISOString() });
+    $input.value = '';
+    save();
+  }
+
+  function toggle(id) {
+    const t = todos.find(t => t.id === id);
+    if (!t) return;
+    t.completed = !t.completed;
+    save();
+  }
+
+  function remove(id) {
+    const t = todos.find(t => t.id === id);
+    if (!t) return;
+    if (!t.completed && !confirm('确定要删除这个任务吗？')) return;
+    todos = todos.filter(t => t.id !== id);
+    save();
+  }
+
+  function updateText(id, newText) {
+    newText = newText.trim();
+    if (!newText) return;
+    const t = todos.find(t => t.id === id);
+    if (!t) return;
+    t.text = newText;
+    editingId = null;
+    save();
+  }
+
+  function clearCompleted() {
+    if (!todos.some(t => t.completed)) return;
+    if (!confirm('确定要清除所有已完成的任务吗？')) return;
+    todos = todos.filter(t => !t.completed);
+    save();
+  }
+
+  function startEdit(id, span) {
+    if (editingId) cancelEdit();
+    editingId = id;
+    const t = todos.find(t => t.id === id);
+    if (!t) return;
+    const input = document.createElement('input');
+    input.className = 'todo-edit-input';
+    input.value = t.text;
+    input.maxLength = 200;
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+    input.addEventListener('blur', () => updateText(id, input.value));
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter') input.blur();
+      if (e.key === 'Escape') { input.value = t.text; input.blur(); }
+    });
+  }
+
+  function cancelEdit() { editingId = null; render(); }
+
+  function createItem(task) {
+    const li = document.createElement('li');
+    li.className = 'todo-item' + (task.completed ? ' completed' : '');
+
+    const check = document.createElement('span');
+    check.className = 'todo-check' + (task.completed ? ' done' : '');
+    check.title = task.completed ? '标记为未完成' : '标记为已完成';
+    check.addEventListener('click', () => toggle(task.id));
+
+    const text = document.createElement('span');
+    text.className = 'todo-text' + (task.completed ? ' completed' : '');
+    text.textContent = task.text;
+    text.title = '双击编辑';
+    text.addEventListener('dblclick', () => { if (editingId !== task.id) startEdit(task.id, text); });
+
+    const actions = document.createElement('span');
+    actions.className = 'todo-actions';
+    const editBtn = document.createElement('button');
+    editBtn.className = 'todo-action-btn';
+    editBtn.innerHTML = '&#9998;';
+    editBtn.title = '编辑';
+    editBtn.addEventListener('click', () => { if (editingId !== task.id) startEdit(task.id, text); });
+    const delBtn = document.createElement('button');
+    delBtn.className = 'todo-action-btn delete';
+    delBtn.innerHTML = '&#10005;';
+    delBtn.title = '删除';
+    delBtn.addEventListener('click', () => remove(task.id));
+    actions.appendChild(editBtn);
+    actions.appendChild(delBtn);
+
+    li.appendChild(check);
+    li.appendChild(text);
+    li.appendChild(actions);
+    return li;
+  }
+
+  function render() {
+    $activeList.innerHTML = '';
+    $completedList.innerHTML = '';
+
+    const active = todos.filter(t => !t.completed);
+    const completed = todos.filter(t => t.completed);
+
+    if (todos.length === 0) {
+      $empty.style.display = 'block';
+      $completedSection.style.display = 'none';
+      return;
+    }
+    $empty.style.display = 'none';
+
+    // 未完成区
+    active.forEach(t => $activeList.appendChild(createItem(t)));
+
+    // 已完成区
+    if (completed.length > 0) {
+      $completedSection.style.display = 'block';
+      $completedCount.textContent = completed.length;
+      $completedList.style.display = completedCollapsed ? 'none' : 'block';
+      $collapseArrow.classList.toggle('collapsed', completedCollapsed);
+      completed.forEach(t => $completedList.appendChild(createItem(t)));
+    } else {
+      $completedSection.style.display = 'none';
+    }
+  }
+
+  function exportTxt() {
+    const now = new Date();
+    const dateStr = now.getFullYear() + '-' +
+      String(now.getMonth() + 1).padStart(2, '0') + '-' +
+      String(now.getDate()).padStart(2, '0');
+    const active = todos.filter(t => !t.completed);
+    const completed = todos.filter(t => t.completed);
+    let txt = '任务计划列表\n' + dateStr + '\n\n';
+    txt += '未完成 (' + active.length + ')\n';
+    if (active.length) active.forEach((t, i) => { txt += (i + 1) + '. ' + t.text + '\n'; });
+    else txt += '（无）\n';
+    txt += '\n已完成 (' + completed.length + ')\n';
+    if (completed.length) completed.forEach((t, i) => { txt += (i + 1) + '. ' + t.text + '\n'; });
+    else txt += '（无）\n';
+    const blob = new Blob([txt], { type: 'text/plain;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '任务计划_' + dateStr + '.txt';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  $input.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) add($input.value); });
+  $addBtn.addEventListener('click', () => add($input.value));
+  $clearBtn.addEventListener('click', e => { e.stopPropagation(); clearCompleted(); });
+  document.getElementById('todoExportBtn').addEventListener('click', exportTxt);
+  $completedHeader.addEventListener('click', () => {
+    completedCollapsed = !completedCollapsed;
+    $completedList.style.display = completedCollapsed ? 'none' : 'block';
+    $collapseArrow.classList.toggle('collapsed', completedCollapsed);
+  });
+  document.addEventListener('click', e => { if (editingId && !e.target.closest('.todo-item')) cancelEdit(); });
+
+  load();
+  render();
+  $input.focus();
+})();
+</script>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">jeospace</div><div class="author-info__description">锚点 滋养 试炼</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jeospace" target="_blank" title="fab fa-github"><i class="GitHub"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/21/hello-world/" title="Hello World">Hello World</a><time datetime="2022-03-21T02:48:27.000Z" title="发表于 2022-03-21 10:48:27">2022-03-21</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/primary/" style="font-size: 1.1em; color: #999">primary</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-07-09T11:51:45.658Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By jeospace</div><div class="framework-info"><span>框架 </span><a href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/lib/fancybox/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'jeospace/jeospace.github.io',
+      'data-repo-id': 'R_kgDOHCSzyA',
+      'data-category-id': '',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !true) {
+    if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
