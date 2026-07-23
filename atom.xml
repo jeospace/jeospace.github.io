@@ -6,7 +6,7 @@
   <link href="https://jeospace.github.io/atom.xml" rel="self"/>
   
   <link href="https://jeospace.github.io/"/>
-  <updated>2026-07-08T14:39:26.283Z</updated>
+  <updated>2026-07-23T10:57:09.363Z</updated>
   <id>https://jeospace.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>0.0 step</title>
+    <link href="https://jeospace.github.io/2026/07/23/0-0%20step/"/>
+    <id>https://jeospace.github.io/2026/07/23/0-0%20step/</id>
+    <published>2026-07-23T10:48:04.000Z</published>
+    <updated>2026-07-23T10:57:09.363Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="你麦克叔叔是个大猪蹄子！"><a href="#你麦克叔叔是个大猪蹄子！" class="headerlink" title="你麦克叔叔是个大猪蹄子！"></a>你麦克叔叔是个大猪蹄子！</h1><p>多年前入手使用后，头大搁置，现在再次捡起。建议：做购买决策前多实物了解下，看下适配程度。</p><h6 id="1-回忆：入苹果全家桶的那一天"><a href="#1-回忆：入苹果全家桶的那一天" class="headerlink" title="1.回忆：入苹果全家桶的那一天"></a>1.回忆：入苹果全家桶的那一天</h6><p>一个唱跳rap计时前（2.5年 就是这么巧），约合双十二，入了mac book的坑，准备沉浸式学习。<br>购买因素：</p><ul><li>正值年终，奖励自己</li><li>手机刚换，平板和电脑可换可不换</li><li>精力富裕，想要拓宽自己<del>折腾下</del></li><li>mac更精简，更易专注工作学习（<em>、</em>）</li><li>入手pro去往it探索</li></ul><p>同时到手了苹果三件套，感觉猛猛哒。</p><h6 id="2-金玉其外，但苹果不好啃"><a href="#2-金玉其外，但苹果不好啃" class="headerlink" title="2.金玉其外，但苹果不好啃"></a>2.金玉其外，但苹果不好啃</h6><p>网上找了验收苹果教程，历时1晚<br>了解构成-桌面 菜单 快捷键 触摸板，历时3晚+<br>软件装机，卡主了</p><ul><li>原来的习惯要改，常要查看对照</li><li>原win上的软件套装，AppStore里没有，有的替代也贵，基本都要买..，新消费习惯不适应</li><li>那时m3算新的，软件支持的m1 m2</li><li>没写版本的软件下载后，还是不兼容（比如虚拟机，现在已兼容了）</li></ul><p>搁置了几月，再用还是不支持，就停摆了，继续用国产机了。</p><p>你可以说国产不够高级前沿，但适配度已经可以了，或者说冗余&#x2F;兼容基本给足了。因为人多力量大，总有些大手子帮你趟过路了。（果子照理吃的人也不少，还是生产力来着，哎😑，还是得实机试）</p><h6 id="3-捡起诱因"><a href="#3-捡起诱因" class="headerlink" title="3.捡起诱因"></a>3.捡起诱因</h6><p>1.ai如火如荼，什么都用果子跑来着，心有点痒，跑个残血版也行。<br>2.手机用久了脑子不够了，得上机戒断下。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;你麦克叔叔是个大猪蹄子！&quot;&gt;&lt;a href=&quot;#你麦克叔叔是个大猪蹄子！&quot; class=&quot;headerlink&quot; title=&quot;你麦克叔叔是个大猪蹄子！&quot;&gt;&lt;/a&gt;你麦克叔叔是个大猪蹄子！&lt;/h1&gt;&lt;p&gt;多年前入手使用后，头大搁置，现在再次捡起。建议：做购买决策前</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>近2周日话</title>
+    <link href="https://jeospace.github.io/2026/07/23/%E8%BF%912%E5%91%A8%E6%97%A5%E8%AF%9D/"/>
+    <id>https://jeospace.github.io/2026/07/23/%E8%BF%912%E5%91%A8%E6%97%A5%E8%AF%9D/</id>
+    <published>2026-07-23T10:42:44.000Z</published>
+    <updated>2026-07-23T13:18:14.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="近2周日话"><a href="#近2周日话" class="headerlink" title="近2周日话"></a>近2周日话</h1><h2 id="1-重构todolist"><a href="#1-重构todolist" class="headerlink" title="1.重构todolist"></a>1.重构todolist</h2><h3 id="aim：轻量化、随意性场景——不需要ddl味，也不要签到皮肤"><a href="#aim：轻量化、随意性场景——不需要ddl味，也不要签到皮肤" class="headerlink" title="aim：轻量化、随意性场景——不需要ddl味，也不要签到皮肤"></a>aim：轻量化、随意性场景——不需要ddl味，也不要签到皮肤</h3><h3 id="output：轻盈工具"><a href="#output：轻盈工具" class="headerlink" title="output：轻盈工具"></a>output：轻盈工具</h3><ul><li>数据本地化、不传云端、可导出txt</li><li>键入待办任务，按时序排列</li><li>勾选完成任务，移入已完成，折叠</li></ul><h2 id="2-发个文章"><a href="#2-发个文章" class="headerlink" title="2.发个文章"></a>2.发个文章</h2><h2 id="3-标签改中文"><a href="#3-标签改中文" class="headerlink" title="3.标签改中文"></a>3.标签改中文</h2><h2 id="4-增加评论-说说-想法"><a href="#4-增加评论-说说-想法" class="headerlink" title="4.增加评论&#x2F;说说&#x2F;想法"></a>4.增加评论&#x2F;说说&#x2F;想法</h2><h3 id="aim：冒出的新想法，直接push——不需要1-2句话也发篇文章"><a href="#aim：冒出的新想法，直接push——不需要1-2句话也发篇文章" class="headerlink" title="aim：冒出的新想法，直接push——不需要1-2句话也发篇文章"></a>aim：冒出的新想法，直接push——不需要1-2句话也发篇文章</h3><ul><li>启用<a href="https://giscus.app/zh-CN">giscus.app</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;近2周日话&quot;&gt;&lt;a href=&quot;#近2周日话&quot; class=&quot;headerlink&quot; title=&quot;近2周日话&quot;&gt;&lt;/a&gt;近2周日话&lt;/h1&gt;&lt;h2 id=&quot;1-重构todolist&quot;&gt;&lt;a href=&quot;#1-重构todolist&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+    <category term="weekly" scheme="https://jeospace.github.io/tags/weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
